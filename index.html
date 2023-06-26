@@ -2,55 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kailey's Weather</title>
+    <title>Froggy Weather</title>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Assistant&family=Bagel+Fat+One&family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/6b6ab91597.js"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
-    ></script>
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/script.js"></script>
+    <div class="container1">
       <form>
         <input
           type="search"
-          placeholder="Please Enter Your City"
+          placeholder="Enter a city!"
           autocorrect="on"
-          id="search-city"
+          id="city-search"
         />
-        <button type="submit" id="submit-city">
-          <i
-            class="fa-solid fa-magnifying-glass magnify"
-            style="color: #975a5e"
-          ></i>
+        <button type="submit" id="city-submit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-arrow-right-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+            />
+          </svg>
         </button>
+        <button type="button" class="btn btn-dark">Use Current Location</button>
       </form>
-      <br />
-
-      <h1>How's The Weather?</h1>
-      <h3 id="display-message">Weather in <span id="user-city">Toyko</span></h3>
-      <h5 id="date-and-time">Monday, 6:56</h5>
-      <br />
-      <i class="fa-solid fa-cloud-sun weatherApp" style="color: #975a5e"></i>
-      <h1 id="current-temperature">13° C</h1>
+      <h1 id="city-name">Lisbon</h1>
+      <div class="container2">
+        <div id="best-pair">
+          <p class="assistant" id="city-temp">68° F</p>
+          <img src="img/sunnyFrog.PNG" id="mr-frog" />
+        </div>
+        <br />
+        <p id="temp-desc">
+          Mr. Frog says to make sure you drink water & wear sunscreen today!
+        </p>
+      </div>
+      <div class="btnGroupParent">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-dark">F</button>
+          <button type="button" class="btn btn-dark">C</button>
+        </div>
+      </div>
     </div>
-    <button id="current-location">Weather for your location!</button>
-    <br />
-    <button class="cAndF">C/F</button>
-    <footer>
-      <a href="https://github.com/kiweeherman/My-weather-app" target="_blank"
-        ><p>GitHub Repository</p></a
-      >
-    </footer>
-    <script src="src/actions.js"></script>
   </body>
 </html>

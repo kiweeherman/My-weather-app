@@ -1,85 +1,63 @@
-h1 {
-  font-family: "Cherry Bomb One", cursive;
-  color: #25161b;
-  font-size: 60px;
-}
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
-  color: #453953;
-  line-height: 5px;
-  display: inline;
-  font-size: 30px;
-  padding: 20px;
+  font-family: "Bagel Fat One", cursive;
 }
-body {
-  background: #f3cba5;
-  margin: 0 auto;
-  text-align: center;
-}
-.weatherApp {
-  font-size: 150px;
-  margin-top: 20px;
+p {
+  font-family: "Indie Flower", cursive;
 }
 form {
-  position: relative;
-  top: 30px;
+  text-align: center;
 }
-input {
-  background-color: #fadcbf;
-  border: solid;
-  border-color: #453953;
-  border-width: 0.5px;
+.col {
+  margin: 0 auto;
+  width: 50%;
 }
-button {
-  background: #fadcbf;
-  border: solid #25161b;
-  transition: 200ms ease-in-out;
-  border-width: 0.5px;
+.assistant {
+  font-family: "Assistant", sans-serif;
 }
-button:hover {
-  background-color: #25161b;
-  border: solid #fadcbf;
-  border-width: 0.5px;
-  cursor: pointer;
+.container1 {
+  background: #228d57;
+  border-radius: 30px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
 }
-.currentTemp {
-  font-size: 100px;
-  display: inline;
-  position: relative;
-  top: -25px;
-  left: 20px;
+.container2 {
+  background-color: #85bb65;
+  padding: 30px;
+  border-radius: 30px;
+  width: 90%;
+  margin: 0 auto;
 }
-.magnify {
-  font-size: 15px;
+#city-name {
+  text-align: center;
+  font-size: 500%;
 }
-.container {
-  background-color: rgb(246, 237, 228);
-  border-radius: 20px;
-  width: 700px;
-  padding: 80px;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: #25161b;
+#city-temp {
+  font-size: 950%;
+  margin: 0;
+  text-align: center;
 }
-.cAndF {
-  border-radius: 20px;
-  padding: 10px;
-  margin: 20px;
-  font-size: 25px;
-}
-.cAndF:hover {
-  color: aliceblue;
-}
-#current-location {
-  border-radius: 20px;
-  padding: 10px;
+#temp-desc {
+  text-align: center;
+  font-size: 170%;
   margin: 20px;
 }
-#current-location:hover {
-  color: aliceblue;
+#temp-guage {
+  margin: 20px;
+  left: 90%;
+}
+#mr-frog {
+  width: 50%;
+  margin: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.btnGroupParent {
+  text-align: center;
+  padding: 20px;
 }
