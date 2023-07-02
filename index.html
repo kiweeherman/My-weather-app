@@ -48,20 +48,16 @@
     <!--This marks he beginning of our section which includes the temperature and forecast-->
     <div class="mainSection">
       <h2 id="date-and-time">Sunday, 12:00 AM</h2>
-      <div class="grid-container">
-        <div class="temperature">
-          <h2 class="temperature">
-            <span id="current-temperature">48°</span>
-            <div class="fAndC">F | C</div>
-          </h2>
+      <h2 class="temperature">
+        <span id="current-temperature">48° C</span>
+        <div class="fAndC">
+          <button id="imperial">F</button> | <button id="metric">C</button>
         </div>
-        <div class="image">
-          <img src="img/sunnyFrog.PNG" class="fwog" width="40%" />
-        </div>
-      </div>
+      </h2>
+      <img src="img/clear-sky-day.PNG" class="fwog" width="40%" id="frog-boy" />
       <br />
       <!--Cute little message to accompany forecast-->
-      <p>Mr. Frog says the sky is beautiful and clear today!</p>
+      <p id="mrFrogSays">Mr. Frog says the sky is beautiful and clear today!</p>
     </div>
     <p class="centered">
       <!--And of course, a link to my github repository-->

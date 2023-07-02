@@ -22,29 +22,10 @@ h1 {
 }
 
 .temperature {
-  font-size: 250%;
-  position: relative;
-  left: 30%;
+  font-size: 200%;
   font-family: "Assistant", sans-serif;
 }
 
-.image {
-  text-align: center; /* Horizontally center the image */
-  width: 200%;
-  position: relative;
-  right: 40%;
-}
-
-.temperature {
-  grid-column-start: 1; /* Start at the first column */
-  grid-column-end: 6; /* End at the second column */
-  text-align: center;
-}
-
-.image {
-  grid-column-start: 7; /* Start at the second column */
-  grid-column-end: 12; /* End at the third column */
-}
 .mainSection {
   background-color: #85bb65;
   padding: 40px;
@@ -91,4 +72,13 @@ h2 {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.fwog {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+button {
+  border: none;
+  background-color: #85bb65;
 }
