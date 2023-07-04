@@ -2,7 +2,22 @@
 let currentDay = document.getElementById("date-and-time");
 
 let now = new Date();
-let weekdays = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+let weekdays = [
+  "Sun",
+  "Mon",
+  "Tues",
+  "Wed",
+  "Thurs",
+  "Fri",
+  "Sat",
+  "Sun",
+  "Mon",
+  "Tues",
+  "Wed",
+  "Thurs",
+  "Fri",
+  "Sat",
+];
 function amPm() {
   if (now.getHours < 12) {
     return "AM";
